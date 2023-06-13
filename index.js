@@ -30,3 +30,31 @@ const carPartId = (function(id) {
 
 console.log(carPartId('Left Door'))
 console.log(carPartId('Right Door'))
+
+//Property and Value checking
+
+const drink = {
+    id: '12m12a',
+    name: 'Muzaffar',
+    price: {
+        half: 100,
+        full: 150,
+    }
+}
+
+// Values existing
+if (drink.id) {
+
+    console.log(drink.id)
+}
+//Imperative way
+for (const prop in drink) {
+    if (drink[prop] === 'Muzaffar')
+        console.log(drink[prop])
+}
+
+//Declarative way
+
+console.log(Object.values(drink).includes('Muzaffar'));
+
+//Property existing
