@@ -58,3 +58,22 @@ for (const prop in drink) {
 console.log(Object.values(drink).includes('Muzaffar'));
 
 //Property existing
+
+//Adding and updating Object property
+
+const drinks = {
+    id: '12m12a',
+    name: 'Orange',
+    price: {
+        half: 100,
+        full: 150,
+    }
+}
+
+function propUpdate(prop, value) {
+    drinks[prop] = value;
+}
+
+propUpdate('name', 'mango');
+
+console.log(drinks)
