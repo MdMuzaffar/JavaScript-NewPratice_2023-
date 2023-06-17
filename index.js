@@ -77,3 +77,16 @@ function propUpdate(prop, value) {
 propUpdate('name', 'mango');
 
 console.log(drinks)
+
+//Remove object property
+// delete drinks.id;
+drinks.id = undefined;
+
+if (drinks.id) {
+    console.log('Has a id.....')
+}
+
+console.log(drinks.hasOwnProperty('id'));
+
+const { price, ...rest } = drinks;
+console.log(price, rest, drinks)
