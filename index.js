@@ -88,5 +88,36 @@ if (drinks.id) {
 
 console.log(drinks.hasOwnProperty('id'));
 
-const { price, ...rest } = drinks;
-console.log(price, rest, drinks)
+// const { price, ...rest } = drinks;
+// console.log(price, rest, drinks)
+
+//Merging Objects
+
+const drinks1 = {
+    id: '12m12a',
+    name: 'Orange',
+}
+const price1 = {
+    half: 100,
+    full: 150,
+}
+
+const quantity = {
+        Qtr: 250,
+        Half: 500,
+    }
+    // const mergeDrink = Object.assign({}, drinks1, price1, quantity);
+    // const mergeDrink1 = Object.assign({}, drinks1, { price1 }, { quantity });
+
+// use Spread Operators
+const mergeSpread = {...drinks1, ... { price1 }, ... { quantity } }
+    // console.log(drinks1, price1)
+    // console.log('view Merge output' + ' ' +
+    //     mergeDrink1);
+
+// console.log(
+//     mergeDrink1);
+// console.log(
+//     mergeDrink);
+
+console.log(mergeSpread)
