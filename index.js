@@ -88,8 +88,8 @@ if (drinks.id) {
 
 console.log(drinks.hasOwnProperty('id'));
 
-// const { price, ...rest } = drinks;
-// console.log(price, rest, drinks)
+const { price, ...rest } = drinks;
+console.log(price, rest, drinks)
 
 //Merging Objects
 
@@ -121,3 +121,30 @@ const mergeSpread = {...drinks1, ... { price1 }, ... { quantity } }
 //     mergeDrink);
 
 console.log(mergeSpread)
+
+console.log('-------------Imperative Programming-----------------------------------')
+
+const car = {};
+car.make = 'Honda';
+car.model = 'Civic';
+car.drive = function() {
+    console.log('Drive a car' + ' ' + this.make + ' ' + this.model)
+}
+car.drive();
+
+//output Drive a car Honda Civic
+
+console.log('-------------Declarative Programming-----------------------------------')
+
+class Transport {
+    constructor(make, model) {
+        this.makes = make;
+        this.models = model;
+    }
+    drives() {
+        console.log('Driving the ' + this.makes + ' ' + this.models);
+    }
+}
+
+const transport = new Transport('Honda', 'Verna');
+transport.drives()
