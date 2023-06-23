@@ -148,3 +148,32 @@ class Transport {
 
 const transport = new Transport('Honda', 'Verna');
 transport.drives()
+
+
+//--------------map-------------------------
+
+const nameUpdateMapped = [
+    { id: 1, name: 'Muzaffar', Studies: 'Bcom' },
+    { id: 2, name: 'Afsar', Studies: 'BSC' },
+    { id: 3, name: 'Zafar', Studies: 'SSC' },
+];
+
+// const nameUpdateMap = ItemsMap.map((items) => {
+//     if (items.name === 'Muzaffar') {
+//         return {
+//             ...items,
+//             name: items.name = 'developer',
+//         }
+//     }
+//     return items;
+// })
+// console.log(nameUpdateMap);
+
+const nameUpdateMap = nameUpdateMapped.map((items) => {
+    if (items.name === 'Muzaffar') {
+        return {...items,
+            name: items.name = 'Developer',
+        }
+    };
+});
+console.log(nameUpdateMap);
