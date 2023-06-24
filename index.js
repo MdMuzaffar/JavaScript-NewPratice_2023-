@@ -254,6 +254,9 @@ for (let i = 0; i < items.length; i++) {
 
 // console.log(halfOfPrice)
 
+// items.map() ARRAY FILTER
+
+
 
 
 
@@ -271,3 +274,12 @@ for (let i = 0; i < items.length; i++) {
 // console.log('Has a id.....')
 // console.log('Has a id.....' + '$makeVar')
 // console.log(makeVar)
+
+const arrayFilter = [];
+for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (item.price > 1999) {
+        arrayFilter.push(item)
+    }
+}
+console.log(arrayFilter)
