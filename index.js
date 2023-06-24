@@ -120,43 +120,33 @@ const mergeSpread = {...drinks1, ... { price1 }, ... { quantity } }
 // console.log(
 //     mergeDrink);
 
-console.log(mergeSpread)
-
-console.log('-------------Imperative Programming-----------------------------------')
-
-const car = {};
-car.make = 'Honda';
-car.model = 'Civic';
-car.drive = function() {
-    console.log('Drive a car' + ' ' + this.make + ' ' + this.model)
-}
-car.drive();
+// console.log(mergeSp 
 
 //output Drive a car Honda Civic
 
-console.log('-------------Declarative Programming-----------------------------------')
+// console.log('-------------Declarative Programming-----------------------------------')
 
-class Transport {
-    constructor(make, model) {
-        this.makes = make;
-        this.models = model;
-    }
-    drives() {
-        console.log('Driving the ' + this.makes + ' ' + this.models);
-    }
-}
+// class Transport {
+//     constructor(make, model) {
+//         this.makes = make;
+//         this.models = model;
+//     }
+//     drives() {
+//         console.log('Driving the ' + this.makes + ' ' + this.models);
+//     }
+// }
 
-const transport = new Transport('Honda', 'Verna');
-transport.drives()
+// const transport = new Transport('Honda', 'Verna');
+// transport.drives()
 
 
 //--------------map-------------------------
 
-const nameUpdateMapped = [
-    { id: 1, name: 'Muzaffar', Studies: 'Bcom' },
-    { id: 2, name: 'Afsar', Studies: 'BSC' },
-    { id: 3, name: 'Zafar', Studies: 'SSC' },
-];
+// const nameUpdateMapped = [
+//     { id: 1, name: 'Muzaffar', Studies: 'Bcom' },
+//     { id: 2, name: 'Afsar', Studies: 'BSC' },
+//     { id: 3, name: 'Zafar', Studies: 'SSC' },
+// ];
 
 // const nameUpdateMap = ItemsMap.map((items) => {
 //     if (items.name === 'Muzaffar') {
@@ -169,11 +159,115 @@ const nameUpdateMapped = [
 // })
 // console.log(nameUpdateMap);
 
-const nameUpdateMap = nameUpdateMapped.map((items) => {
-    if (items.name === 'Muzaffar') {
-        return {...items,
-            name: items.name = 'Developer',
+// const nameUpdateMap = nameUpdateMapped.map((items) => {
+//     if (items.name === 'Muzaffar') {
+//         return {...items,
+//             name: items.name = 'Developer',
+//         }
+//     };
+// });
+// console.log(nameUpdateMap);
+
+// varMap.map((a) => {
+//     if (a.value === 10) {
+//         return {
+//             ...a,
+//             value: a.value = 20,
+//         }
+//     }
+//     return a;
+// })
+
+
+// -----------------------for each----------------------
+
+const items = [
+    { id: 10, make: 'toyota', model: 'crista', price: 1000 },
+    { id: 11, make: 'honda', model: 'civic', price: 4000 },
+    { id: 12, make: 'maruti', model: 'suzuki', price: 2000 }
+];
+
+// items.forEach()
+
+// items.forEach((a) => {
+//     console.log(a.model, a.id, (a.price / 2).toFixed(2), )
+// });
+// const forEachNumber =
+// console.log(forEachNumber);
+
+// const numbersAdd = [3, 4, 55, 66];
+// let sum = 0;
+
+// numbersAdd.forEach(num => {
+//     sum += num;
+// });
+// console.log(sum);
+
+// items.map() USE TO RETERN THE SPECIFIC PROPERTY FROM THE ARRAY
+
+// const itemsMapped = items.map((e, i) => {
+//     if (e.price >= 1000)
+//         return e.model
+// })
+
+// console.log('Mapped Value ' + '' + itemsMapped);
+
+const newMake = items.map((e) => {
+    if (e.id === 10) {
+        return {...e,
+            model: 'innova',
         }
-    };
-});
-console.log(nameUpdateMap);
+    }
+    return e
+})
+
+// console.log(newMake);
+// console.log(items);
+
+// items.map() IMPERATIVE WAY
+
+const halfOfPrice = [];
+
+for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (item.id === 10) {
+        halfOfPrice.push({
+            ...item,
+            price: item.price / 2
+        })
+    } else {
+        halfOfPrice.push(item)
+    }
+}
+
+const halfPrice = [];
+
+for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (item.id === 11) {
+        halfPrice.push({...item, price: item.price / 2 })
+    } else {
+        halfPrice.push(item)
+    }
+}
+// console.log(halfPrice);
+
+// console.log(halfOfPrice)
+
+
+
+
+const makeVar = [];
+for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (item.id === 12) {
+        makeVar.push({...items, price: item.price / 2 })
+    } else {
+        makeVar.push(item);
+    }
+}
+
+// console.log { 'testing' }
+// console.log('Has a id.....')
+// console.log('Has a id.....' + '$makeVar')
+// console.log(makeVar)
