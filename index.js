@@ -282,4 +282,19 @@ for (let i = 0; i < items.length; i++) {
         arrayFilter.push(item)
     }
 }
-console.log(arrayFilter)
+// console.log(arrayFilter)
+
+// items.map() ARRAY FIND
+
+const findVariable = ['a', 'b', 'c', 'd'].find(x => x === 'a');
+
+let found;
+for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (item.id === 10) {
+        found = item;
+        break;
+    }
+
+}
+console.log(found)
