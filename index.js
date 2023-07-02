@@ -321,3 +321,40 @@ function setDate() {
     // console.log(seconds);
 }
 setInterval(setDate, 1000);
+
+
+const daysEl = document.getElementById("days");
+const hoursEl = document.getElementById('hours');
+const minutesEl = document.getElementById('min');
+const secEl = document.getElementById('sec');
+
+
+const setNewYearDate = '1 jan 2024';
+
+function newYearLeft() {
+    // const daysEl = document.getElementById("days");
+    // const hoursEl = document.getElementById('hours');
+    // const minutesEl = document.getElementById('min');
+    // const secEl = document.getElementById('sec');
+
+    const newYear = new Date(setNewYearDate);
+    const todaysDate = new Date();
+
+    const secondss = (newYear - todaysDate) / 1000;
+
+    const dayss = Math.floor(secondss / 3600 / 24);
+    const hourss = Math.floor(secondss / 3600) % 24;
+    const minutess = Math.floor(secondss / 3600) % 60;
+    const sec = Math.floor(secondss) % 60;
+
+    // console.log(days, hourss, minutess, sec);
+
+    daysEl.innerHTML = dayss;
+    hoursEl.innerHTML = hourss;
+    minutesEl.innerHTML = minutess;
+    secEl.innerHTML = sec;
+}
+
+newYearLeft();
+
+setInterval(newYearLeft, 1000);

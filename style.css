@@ -51,3 +51,9 @@ body {
     width: 90px;
     height: 90px;
 } */
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
