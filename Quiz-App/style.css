@@ -1,3 +1,47 @@
 h2 {
     color: gray;
+    padding-left: 30px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    background-color: coral;
+}
+
+.quiz-container {
+    width: 600px;
+    max-width: 100%;
+    background: bisque;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 1.2rem;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+ul li {
+    margin: 1rem 0;
 }

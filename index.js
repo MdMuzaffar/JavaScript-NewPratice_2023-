@@ -348,7 +348,7 @@ function newYearLeft() {
     const sec = Math.floor(secondss) % 60;
 
     // console.log(days, hourss, minutess, sec);
-
+    debugger
     daysEl.innerHTML = dayss;
     hoursEl.innerHTML = hourss;
     minutesEl.innerHTML = minutess;

@@ -1,0 +1,25 @@
+const questions = [{
+        question: 'What is the capital of France?',
+        a: 'London',
+        b: 'Rome',
+        c: 'Berlin',
+        d: 'paris',
+        answer: 'Paris',
+    },
+    {
+        question: 'What is the name of the largest ocean in the world?',
+        a: 'Pacific Ocean',
+        b: 'Indian Ocean',
+        c: 'Arctic Ocean',
+        d: 'Atlantic Ocean',
+        answer: 'Pacific Ocean',
+    },
+    {
+        question: 'What is the name of the tallest mountain in the world?',
+        a: 'K2',
+        b: 'Mount Everest',
+        c: 'Denali',
+        d: 'Aconcagua',
+        answer: 'Mount Everest',
+    },
+];
