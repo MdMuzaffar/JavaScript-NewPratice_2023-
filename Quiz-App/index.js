@@ -64,6 +64,9 @@ const getcheckedAnswer = () => {
     return ans;
 
 };
+const deselectAll = (ansEl) => {
+    answers.forEach(ansEl => ansEl.checked = false);
+}
 
 submitEl.addEventListener('click', () => {
     const checkedAnswer = getcheckedAnswer();
@@ -74,6 +77,8 @@ submitEl.addEventListener('click', () => {
     }
 
     questionNumber++;
+
+    deselectAll();
 
     if (questionNumber < questions.length) {
         quizAnswers();
