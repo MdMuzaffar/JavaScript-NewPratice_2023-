@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 
 </head>
 <h2>Quiz App Testing</h2>
 <div class="quiz-container">
-    <h2>Question</h2>
+    <h2 class="question">Question Application</h2>
     <ul>
-        <li><input type="radio" id="a" name="answer" placeholder="Your name"><label for="a">Question</label></li>
-        <li><input type="radio" id="b" name="answer" placeholder="Your name"><label for="b">Question</label></li>
-        <li><input type="radio" id="c" name="answer" placeholder="Your name"><label for="c">Question</label></li>
-        <li><input type="radio" id="d" name="answer" placeholder="Your name"><label for="d">Question</label></li>
+        <li><input type="radio" id="a" name="answer" class="answer" placeholder="Your name"><label for="a" id="option1">Question</label></li>
+        <li><input type="radio" id="b" name="answer" class="answer" placeholder="Your name"><label for="b" id="option2">Question</label></li>
+        <li><input type="radio" id="c" name="answer" class="answer" placeholder="Your name"><label for="c" id="option3">Question</label></li>
+        <li><input type="radio" id="d" name="answer" class="answer" placeholder="Your name"><label for="d" id="option4">Question</label></li>
     </ul>
 
-    <button>Submit</button>
+    <button id="submit">Submit</button>
 </div>
 
 <body>
