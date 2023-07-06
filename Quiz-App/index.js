@@ -30,9 +30,9 @@ const ans2 = document.querySelector('#option2');
 const ans3 = document.querySelector('#option3');
 const ans4 = document.querySelector('#option4');
 const submitEl = document.querySelector('#submit');
-// const anserEl = document.querySelectorAll('.answer');
+const answers = document.querySelectorAll('.answer')
+    // const anserEl = document.querySelectorAll('.answer');
 
-const answers = document.querySelectorAll('answer')
 
 let questionNumber = 0;
 let score = 0;
