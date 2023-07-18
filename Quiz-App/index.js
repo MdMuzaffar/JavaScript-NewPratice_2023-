@@ -86,3 +86,24 @@ submitEl.addEventListener('click', () => {
 
 
 })
+
+
+// ------------------------for loop -------------------------------------------
+const count = 10;
+
+for (let i = 0; i < 100; i++) {
+    console.log(i)
+}
+
+// --------------------------for in loop ------------------------------------
+
+let marks = {
+    Ahmed: 45,
+    Ahmed1: 48,
+    Ahmed2: 50,
+    Ahmed3: 50,
+}
+
+for (let j in marks) {
+    console.log("marks of " + j + " are " + marks[j])
+}
