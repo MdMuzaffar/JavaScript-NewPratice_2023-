@@ -107,3 +107,29 @@ let marks = {
 for (let j in marks) {
     console.log("marks of " + j + " are " + marks[j])
 }
+
+// --------------------------for of loop ------------------------------------
+
+
+
+// --------------------------while loop ------------------------------------
+
+let n = prompt("enter the number of n")
+n = Number.parseInt(n)
+
+let i = 0;
+while (i < n) {
+    console.log(i);
+    i++;
+}
+
+// --------------------------do while loop ------------------------------------
+
+let n1 = prompt("enter the number of n1")
+n1 = Number.parseInt(n1)
+
+let j = 0;
+do {
+    console.log(j);
+    j++;
+} while (j < n)
