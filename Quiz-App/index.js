@@ -125,11 +125,20 @@ while (i < n) {
 
 // --------------------------do while loop ------------------------------------
 
-let n1 = prompt("enter the number of n1")
-n1 = Number.parseInt(n1)
+// let n1 = prompt("enter the number of n1")
+// n1 = Number.parseInt(n1)
 
-let j = 0;
-do {
-    console.log(j);
-    j++;
-} while (j < n)
+// let j = 0;
+// do {
+//     console.log(j);
+//     j++;
+// } while (j < n)
+
+// --------------------------forEach ------------------------------------
+
+
+let alpha = ["a", "b", "c"]
+
+alpha.forEach(function(value, index) {
+    document.write(index + ":" + value);
+});
